@@ -1,7 +1,8 @@
-import sumar from "./sumador.js";
-
-describe("Sumar", () => {
-  it("deberia sumar dos numeros", () => {
-    expect(sumar(3, 2)).toEqual(5);
-  });
-});
+function codSecret(list,cod){
+    for(let i=1;i<=1;i++){
+        if(list[i]==cod[i]){
+            return "*";
+        }
+    }
+}
+export default codSecret;
