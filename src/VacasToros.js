@@ -1,4 +1,4 @@
-function codSecret(list,cod){
+function Vacas(list,cod){
     var res=[];
     var list2=list.split(",");
     var cod2=cod.split(",");
@@ -7,10 +7,15 @@ function codSecret(list,cod){
             res+= "*";
         }
         else{
+            if(cod2[i]==list){
+                res+= "!";
+            }
+            else{
             res+=""
+            }
         }
     }
     return res;
     
 }
-export default codSecret;
+export default Vacas;
