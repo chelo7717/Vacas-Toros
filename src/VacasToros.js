@@ -3,11 +3,11 @@ function codSecret(list,cod){
     var list2=list.split(",");
     var cod2=cod.split(",");
     for(let i=1;i<=list2.length;i++){
-        if(list[i]==cod[i]){
+        if(list2[i]==cod2[i]){
             res+= "*";
         }
         else{
-            res+="*"
+            res+=""
         }
     }
     return res;
