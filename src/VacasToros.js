@@ -7,15 +7,28 @@ function Vacas(list,cod){
             res+= "*";
         }
         else{
-            if(cod2[i]==list){
+            res+=""
+        }
+    }
+    return res;
+    
+}
+function Toros(list,cod){
+    var res=[];
+    var list2=list.split(",");
+    var cod2=cod.split(",");
+    for(let i=0;i< list2.length;i++){
+        for(let j=0;j<cod2.length;j++){
+            if(i!=j && list2[i]==cod2[j]){
                 res+= "!";
             }
             else{
-            res+=""
+                res+=""
             }
         }
     }
     return res;
     
 }
-export default Vacas;
+
+export default Toros;
