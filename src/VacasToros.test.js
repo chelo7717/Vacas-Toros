@@ -4,4 +4,7 @@ describe("Vacas", () => {
   it("deberia devolver *", () => {
     expect(codSecret("2", "2")).toEqual("*");
   });
+  it("deberia devolver * *", () => {
+    expect(codSecret("2,3", "2,3")).toEqual("**");
+  });
 });

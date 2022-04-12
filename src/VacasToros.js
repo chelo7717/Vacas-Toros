@@ -1,8 +1,16 @@
 function codSecret(list,cod){
-    for(let i=1;i<=1;i++){
+    var res=[];
+    var list2=list.split(",");
+    var cod2=cod.split(",");
+    for(let i=1;i<=list2.length;i++){
         if(list[i]==cod[i]){
-            return "*";
+            res+= "*";
+        }
+        else{
+            res+="*"
         }
     }
+    return res;
+    
 }
 export default codSecret;
