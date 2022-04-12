@@ -30,6 +30,7 @@ function Toros(list,cod){
     return res;
     
 }
+
 function VacasyToros(list,cod){
     var res1=[],res2=[],Res=[];
     res1+=Vacas(list,cod);
