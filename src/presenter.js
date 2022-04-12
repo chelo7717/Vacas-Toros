@@ -12,5 +12,5 @@ form.addEventListener("submit", (event) => {
     const CodigoR = String.parseString(Codigo.value);
   
     div.innerHTML = "<p>" + VacasyToros(CodSecretR, CodigoR) + "</p>";
-    
+    //examen
   })
